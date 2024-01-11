@@ -1,0 +1,65 @@
+<!DOCTYPE >
+
+
+<html>
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Mapa Muestra Usach</title> 
+    <link rel="stylesheet" type="text/css" href="./styles.css" />   
+    <script src="./app.js" defer></script>    
+    <style>
+   
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 56px; /* Altura de la barra de navegación */
+      width: 200px; /* Ancho del menú lateral */
+      height: calc(100% - 56px); /* Altura ajustada */
+      background-color: #f8f9fa;
+      overflow-y: auto;
+      padding: 10px;
+    }
+
+    .search-bar {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .menu-options li {
+      list-style: none;
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /*  contenedor principal */
+    .container-fluid {
+      padding-left: 200px; 
+    }
+  </style>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Mapa USACH</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="form-inline my-2 my-lg-0 ml-auto">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+    <div id="map"></div>   
+    <div class="sidebar">
+    <input type="text" placeholder="Buscar en el menú..." class="search-bar">
+    <ul class="menu-options">
+      <li>Opción 1</li>
+      <li>Opción 2</li>
+      <li>Opción 3</li>
+      <li>Opción 4</li>
+      <li>Opción 5</li>
+    </ul>
+  </div> 
+  </body>
+</html>
