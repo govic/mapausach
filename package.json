@@ -4,6 +4,8 @@
   "description": "",
   "scripts": {
     "start": "webpack serve --config webpack.prod.js --progress --hot --open",
+    "start_default": "node dist/app.js",
+    "build": "webpack --config webpack.prod.js",
     "local": "webpack serve --config webpack.dev.js --progress --hot --open"
   },
   "author": "Alex Muramoto",
