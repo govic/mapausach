@@ -6,14 +6,17 @@ phases:
       nodejs: 18
   pre_build:
     commands:
+      - rm -rf node_modules/ package-lock.json
       - npm config set registry https://registry.npmjs.com/
   build:
     commands:
-      # - npm install --omit=dev --loglevel=verbose
+      - rm -rf node_modules/ package-lock.json
       - npm install
+      - npm run build
   post_build:
     commands:
-      - echo Build completed on `date`
+      - rm -rf node_modules/ package-lock.json
+      - npm install --omit=dev
 artifacts:
   files:
     - "**/*"
