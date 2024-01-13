@@ -5,7 +5,8 @@ module.exports = {
     app: './src/app.js'
   },
   devServer: {
-    // port: 3000,
+    port: 3000,
+    target: 'node',
     static: {
       directory: path.join(__dirname, 'src'),
     }
